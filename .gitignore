@@ -8,6 +8,9 @@
 /tmp
 pgo-data.profdata
 
+# Yes, seriously
+.idea/
+
 # MacOS nuisances
 .DS_Store
 
