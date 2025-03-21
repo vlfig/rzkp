@@ -1,7 +1,6 @@
 [workspace]
 members = [
-    "aggregator",
-    "fibonacci",
+    "cycler",
     "script",
 ]
 resolver = "2"
