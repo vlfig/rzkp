@@ -2,15 +2,17 @@
 version = "0.1.0"
 name = "script"
 edition = "2021"
-default-run = "verify"
+default-run = "cycles"
 
 [[bin]]
-name = "verify"
-path = "src/bin/main.rs"
+name = "cycles"
+path = "src/bin/cycles.rs"
 
 [dependencies]
-sp1-sdk = { version = "4.1.3", features = ["native-gnark"] }
+sp1-sdk = { version = "4.1.3", features = ["native-gnark", "profiling"] }
 tracing = "0.1.40"
+anyhow = "1.0.97"
+clap = { version = "4.5.32", features = ["derive"] }
 
 [build-dependencies]
 sp1-build = "4.1.3"
